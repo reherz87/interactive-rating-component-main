@@ -1,0 +1,87 @@
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+  --cirle: #141519;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background-color: var(--cirle);
+  font-family: "Overpass", sans-serif;
+  color: var(--light-grey);
+}
+
+a {
+  color: var(--light-grey);
+}
+
+h2 {
+  color: var(--white);
+}
+
+p {
+  font-size: 0.9375rem;
+  line-height: 1.3rem;
+}
+
+button {
+  width: 100%;
+  height: 2.5rem;
+  background-color: var(--orange);
+  color: var(--white);
+  border: none;
+  border-radius: 100px 100px 100px 100px;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.card {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: var(--dark-blue);
+  width: 380px;
+  padding: 1.5rem;
+  border-radius: 2rem;
+}
+
+.container__rating {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--very-dark-blue);
+  border-radius: 50%;
+}
