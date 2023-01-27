@@ -5,7 +5,7 @@
   --medium-grey: hsl(216, 12%, 54%);
   --dark-blue: hsl(213, 19%, 18%);
   --very-dark-blue: hsl(216, 12%, 8%);
-  --cirle: #141519;
+  --circle: hsla(216, 12%, 54%, 0.2);
 }
 
 html {
@@ -21,7 +21,7 @@ html {
 
 body {
   margin: 0;
-  background-color: var(--cirle);
+  background-color: var(--very-dark-blue);
   font-family: "Overpass", sans-serif;
   color: var(--light-grey);
 }
@@ -32,6 +32,7 @@ a {
 
 h2 {
   color: var(--white);
+  margin-top: 1.5rem;
 }
 
 p {
@@ -50,6 +51,15 @@ button {
   letter-spacing: 0.25rem;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  background-color: var(--white);
+  color: var(--orange);
+}
+
 footer {
   position: absolute;
   bottom: 0;
@@ -66,6 +76,7 @@ footer {
   transform: translate(-50%, -50%);
   background-color: var(--dark-blue);
   width: 380px;
+  height: 360px;
   padding: 1.5rem;
   border-radius: 2rem;
 }
@@ -76,12 +87,56 @@ footer {
   margin-bottom: 1.5rem;
 }
 
-.circle {
+.circle,
+.star {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 3rem;
   height: 3rem;
-  background-color: var(--very-dark-blue);
+  background-color: var(--circle);
   border-radius: 50%;
+}
+
+.circle:hover {
+  background-color: var(--light-grey);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.circle:active,
+.active {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.active:hover {
+  background-color: var(--orange);
+}
+
+.thankyou__img {
+  margin-top: 1rem;
+  height: 100px;
+}
+
+.thankyou__para {
+  text-align: center;
+}
+
+.thankyou__div {
+  background-color: var(--circle);
+  padding: 0.5rem 1rem;
+  border-radius: 100px 100px 100px 100px;
+  margin: 1.5rem;
+  color: var(--orange);
+}
+
+.thankyou__h2 {
+  margin: 0;
+}
+
+.thankyou__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
