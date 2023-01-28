@@ -81,6 +81,16 @@ footer {
   border-radius: 2rem;
 }
 
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 350px;
+  }
+  .attribution {
+    width: 60%;
+    margin: auto;
+  }
+}
+
 .container__rating {
   display: flex;
   justify-content: space-between;
